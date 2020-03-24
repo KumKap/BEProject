@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BEProject</string>
+    <string name="key_dec">NoOneShouldKnow</string>
+    <string name="key_enc">NoOneCanFind</string>
+    <string name="URL_checkUser">http://192.168.0.104/BEProject/checkUser.php</string>
+    <string name="URL_signIn">http://192.168.0.104/BEProject/signIn.php</string>
+    <string name="URL_userUpdate">http://192.168.0.104/BEProject/userUpdate.php</string>
+    <string name="URL_session">http://192.168.0.104/BEProject/session.php</string>
+    <string name="URL_register">http://192.168.0.104/BEProject/register.php</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_api_key">AIzaSyA8ZtURXpiK_2TC6hmdAuSeF1vwPmISsdk</string>
+    <string name="preference_file_key">12345_key</string>
+    <string name="email">com.example.beproject.email</string>
+    <string name="addr">com.example.beproject.address</string>
+    <string name="lat">com.example.beproject.latitude</string>
+    <string name="longi">com.example.beproject.longitude</string>
+    <string name="URL_upload">http://192.168.0.104/BEProject/Upload.php</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Upload">
+
+        <ImageView
+            android:id="@+id/imageviewer"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/takePicture"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/imageviewer"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="40dp"-->
+        <!--            android:layout_marginRight="150dp"-->
+        <!--            android:background="#d4af37"-->
+        <!--            android:elevation="30dp"-->
+        <!--            android:text="Click Picture"-->
+        <!--            android:onClick="takeImageFromCamera"-->
+        <!--            android:shadowColor="#424242"-->
+        <!--            android:textColor="#ffffff" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/uploadPicture"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/takePicture"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="40dp"-->
+        <!--            android:layout_marginRight="150dp"-->
+        <!--            android:background="#d4af37"-->
+        <!--            android:elevation="30dp"-->
+        <!--            android:text="Upload Picture"-->
+        <!--            android:onClick="uploadImage"-->
+        <!--            android:shadowColor="#424242"-->
+        <!--            android:textColor="#ffffff" />-->
+
+        <ImageView
+            android:id="@+id/takePicture"
+            android:layout_width="210dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/clickpicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageviewer"
+            android:onClick="takeImageFromCamera"/>
+
+        <ImageView
+            android:id="@+id/uploadPicture"
+            android:layout_width="210dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takePicture"
+            android:onClick="uploadImage"/>
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/uploadPicture"
+            app:layout_constraintEnd_toStartOf="@+id/uploadPicture"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takePicture" />
+</androidx.constraintlayout.widget.ConstraintLayout>
